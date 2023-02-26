@@ -1,18 +1,10 @@
 package com.jlr.roman.translator;
 
-import java.util.Map;
-
 /**
  * Class to translate Base 10 to Roman Numbers
- *
  * Ref : https://dl.orangedox.com/yj7O58NnGcewnpH0bY
  */
 public class RomanNumberTranslator {
-
-    /**
-     * Roman number to Base 10 number mappings
-     */
-    private final Map<String, Integer> map = Map.of( "I", 1, "V", 5, "X", 10, "L", 50, "C", 100, "D", 500, "M", 1000);
 
     /**
      * Main method which gets Base 10 numbers and return Roman Numbers
@@ -111,7 +103,7 @@ public class RomanNumberTranslator {
     }
 
     /**
-     * Post fix I, II, III, and VI,VII, VIII
+     * To get the postfix roman numbers such as VI,VII, VIII
      * @param src
      * @param number
      * @param symbol
@@ -126,7 +118,7 @@ public class RomanNumberTranslator {
     }
 
     /**
-     *
+     * To get the prefix roman numbers IV, IX etc
      * @param src
      * @param number
      * @param symbol
